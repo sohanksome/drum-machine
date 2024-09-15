@@ -73,7 +73,7 @@ function App() {
       <div id="drum-machine">
         <div id='title-container'>
           <h1>DRUM <br />MACHINE</h1>
-          <span id='display'></span>
+          <span id='display'>music!!!</span>
         </div>
         {blocks.map((row, rowIndex) => (
           <div id="row" key={rowIndex}>

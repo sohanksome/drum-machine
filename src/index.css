@@ -4,11 +4,12 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(144, 107, 144);
+  background-color: rgb(119, 62, 119);
   font-family: 'Poppins', sans-serif;
 }
 
 #drum-machine {
+  
   display: flex;
   flex-direction: column; /* Default to horizontal */
   align-items: center;
@@ -87,7 +88,8 @@ h1 {
     gap: 20px;
   }
   #drum-machine {
-    flex-direction: column; /* Switch to vertical layout */ /* Adjust margin for smaller screens */
+    flex-direction: column; /* Switch to vertical layout */
+   /* Adjust margin for smaller screens */
   }
 
   #drum-machine button {
