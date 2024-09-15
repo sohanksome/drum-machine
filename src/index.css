@@ -1,0 +1,111 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  background: url('https://pixabay.com/get/gf6d44685c77a461a583e461be3deaa1b4373954b2d78a28a2ab1851390719a68d2f33868e7ebdcfc86b9d2bbb1ac73e4f04815aae3bf7f1823ae0640a1cbde7d_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+#drum-machine {
+  margin-top: 25rem;
+  display: flex;
+  flex-direction: column; /* Default to horizontal */
+  align-items: center;
+  gap: 20px; /* Increased gap for better spacing */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+#display {
+  width: 200px;
+  border: 3px solid white;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  margin-top: 10px; /* Small margin between h1 and display */
+}
+
+#row {
+ display: flex;
+ flex-direction: row;
+ gap: 15px;
+}
+
+#drum-machine button {
+  width: 120px;
+  height: 90px;
+  font-size: 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(96, 96, 96);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.1s ease, transform 0.1s ease;
+}
+
+#drum-machine button:hover {
+  background-color: rgb(64, 64, 64);
+  transform: translateY(-2px);
+}
+
+#drum-machine button.active {
+  background-color: rgb(0, 0, 0);
+  transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.3);
+}
+
+/* Media Query for smaller screens (phones) */
+@media (max-width: 768px) {
+
+  
+
+  #title-container{
+    gap: 20px;
+  }
+  #drum-machine {
+    flex-direction: column; /* Switch to vertical layout */
+    margin-top: 23rem; /* Adjust margin for smaller screens */
+  }
+
+  #drum-machine button {
+    margin:auto 5px;
+    width: 100px; /* Reduce button size for mobile */
+    height: 80px;
+    font-size: 28px;
+  }
+
+  h1 {
+    font-size: 2.0rem; /* Adjust h1 for smaller screens */
+  }
+
+  #display {
+    font-size: 1.5rem; /* Adjust display font size */
+  }
+}
