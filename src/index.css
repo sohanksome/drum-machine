@@ -4,14 +4,11 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  background: url('https://pixabay.com/get/gf6d44685c77a461a583e461be3deaa1b4373954b2d78a28a2ab1851390719a68d2f33868e7ebdcfc86b9d2bbb1ac73e4f04815aae3bf7f1823ae0640a1cbde7d_1280.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: rgb(144, 107, 144);
   font-family: 'Poppins', sans-serif;
 }
 
 #drum-machine {
-  margin-top: 25rem;
   display: flex;
   flex-direction: column; /* Default to horizontal */
   align-items: center;
@@ -90,8 +87,7 @@ h1 {
     gap: 20px;
   }
   #drum-machine {
-    flex-direction: column; /* Switch to vertical layout */
-    margin-top: 23rem; /* Adjust margin for smaller screens */
+    flex-direction: column; /* Switch to vertical layout */ /* Adjust margin for smaller screens */
   }
 
   #drum-machine button {
